@@ -1,16 +1,26 @@
-import sumarization.File;
+
+import java.io.File;
+import sumarization.DocumentsFile;
 
 public class Main {
-    
+
     public static void main(String[] args) {
-        sumarization("");
+        sumarization("/Users/danielborges93/Dropbox/Mestrado/Mineração de texto/Atividade/sumarização/");
     }
-    
+
     private static void sumarization(String folder) {
-        
-        File file = new File("");
-        System.out.println(file.summary(2));
-        
+
+        try {
+            File file = new File(folder);
+            for (String fileLocation : file.list()) {
+                fileLocation = folder + fileLocation;
+                DocumentsFile documentsFile = new DocumentsFile(fileLocation);
+                System.out.println(documentsFile.summary(6));
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
     }
-    
+
 }

@@ -1,6 +1,8 @@
 package sumarization;
 
 import Jama.Matrix;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -8,7 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import model.Document;
 
-public class File {
+public class DocumentsFile {
 
     private String content;
     private ArrayList<Document> documents;
@@ -17,10 +19,8 @@ public class File {
     private Matrix TFIDF;
     private ArrayList<Document> orderedDocuments;
 
-    public File(String location) {
-        content = "Does anybody have document of .RTF file or know where I can get it? "
-                + "I got one from Microsoft tech support. "
-                + "Does repeted.";
+    public DocumentsFile(String location) throws Exception {
+        getContent(location);
         treatContent();
         createDocuments();
         getWords();
@@ -43,6 +43,16 @@ public class File {
             string.append(". ");
         }
         return string.toString();
+    }
+    
+    private void getContent(String location) throws Exception {
+        BufferedReader reader = new BufferedReader(new FileReader(location));
+        StringBuilder contentBuilder = new StringBuilder();
+        String line;
+        while ((line = reader.readLine()) != null) {
+            contentBuilder.append(line).append(" ");
+        }
+        content = contentBuilder.toString();
     }
 
     private void treatContent() {
