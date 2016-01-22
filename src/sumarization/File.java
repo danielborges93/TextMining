@@ -45,7 +45,7 @@ public class File {
     }
 
     private void treatContent() {
-        
+        content = content.replaceAll("([\\n\\s]+)", " ");
     }
 
     private void getWords() {
