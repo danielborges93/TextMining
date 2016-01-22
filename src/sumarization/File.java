@@ -26,6 +26,7 @@ public class File {
         getWords();
         createFrequencyMatrix();
         getTFIDFMatrix();
+        applyWeight();
         rank();
     }
 
@@ -92,6 +93,28 @@ public class File {
     private void getTFIDFMatrix() {
         Techniques techniques = Techniques.sharedInstance();
         TFIDF = techniques.TFIDF(frequencyMatrix, allWords, documents);
+    }
+
+    private void applyWeight() {
+        int midle = documents.size() / 2;
+        int weight = midle;
+        for (int col = 0; col < midle; col++) {
+            for (int row = 0; row < TFIDF.getRowDimension(); row++) {
+                double value = TFIDF.get(row, col);
+                value *= weight;
+                TFIDF.set(row, col, value);
+            }
+            weight--;
+        }
+        weight = 1;
+        for (int col = midle; col < TFIDF.getColumnDimension(); col++) {
+            for (int row = 0; row < TFIDF.getRowDimension(); row++) {
+                double value = TFIDF.get(row, col);
+                value *= weight;
+                TFIDF.set(row, col, value);
+            }
+            weight++;
+        }
     }
 
     private void rank() {
