@@ -3,8 +3,6 @@ package sumarization;
 import Jama.Matrix;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -47,8 +45,7 @@ public class File {
     }
 
     private void treatContent() {
-        Techniques techniques = Techniques.sharedInstance();
-        content = techniques.removeStopwords(content);
+        
     }
 
     private void getWords() {
@@ -57,6 +54,10 @@ public class File {
         HashSet words = new HashSet<>();
         while (matcher.find()) {
             String word = matcher.group().toLowerCase();
+            Techniques techniques = Techniques.sharedInstance();
+            if (techniques.isStopword(word)) {
+                continue;
+            }
             if (word.endsWith(".")) {
                 word = word.replace(".", "");
             }
