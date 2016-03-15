@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <post author="" timestamp="2006-02-27 10:40:00.0">
+    <title>Application Compatibility Logging In IE7</title>
+    <sentence-list count="16">
+      <sentence position="1" labelers="1, 2, 4">As Rob pointed out in his last blog post on security and compatibility in IE7, one of the biggest challenges in software development is making the software secure and compatible at the same time.</sentence>
+      <sentence position="2" labelers="1, 2, 3, 4">In IE7, we have many new security features that help protect users against various attacks by blocking certain content, but as a consequence, some web applications may no longer work as they used to.</sentence>
+      <sentence position="3" labelers="1, 2, 3, 4">To help web developers and IT professional find such compatibility issues, IE7 offers an application compatibility logging feature.</sentence>
+      <sentence position="4" labelers="1, 2, 3">When the feature is enabled, the user is notified by an icon in the status bar.</sentence>
+      <sentence position="5" labelers="2, 3, 4">Thereafter, if one of the new security features blocks certain content, information about the security feature and the blocked content is created in the Windows Event Log</sentence>
+      <sentence position="6" labelers="1, 3">At the RSA conference, I talked to a customer who reported that one of his pages no longer worked correctly and showed a security warning.</sentence>
+      <sentence position="7">He was frustrated that he was seeing this warning that he did not see on IE6 SP1.</sentence>
+      <sentence position="8">He did not know what was causing this issue.</sentence>
+      <sentence position="9" labelers="1, 3">We found that the warning was due to one of the new security features ( local machine zone lock down) first introduced in XPSP2.</sentence>
+      <sentence position="10" labelers="2, 3">The Application compatibility toolkitis designed to help you diagnose such issues.</sentence>
+      <sentence position="11" labelers="1, 2, 4">When you use this toolkit while viewing your website/web application in IE7, the relevant event log entries are displayed in the toolkit to help you find compatibility issues.</sentence>
+      <sentence position="12" labelers="3, 4">A new article on MSDN named Finding Security Compatibility Issues in Internet Explorer 7describes how to download and use the toolkit.</sentence>
+      <sentence position="13">- Tariq Edit:</sentence>
+      <sentence position="14">This version of the toolkit has expired.</sentence>
+      <sentence position="15">Please refer to the blog post titled:</sentence>
+      <sentence position="16">Microsoft Application Compatibility Toolkit (ACT) 5.0 Betafor the latest version details.</sentence>
+    </sentence-list>
+  </post>
+  <comment-list count="20">
+    <comment id="1" author="Dao" timestamp="2006-02-27 15:43:00.0">Good question, Jero ...</comment>
+    <comment id="2" author="EricLaw [MSFT]" timestamp="2006-02-27 15:58:00.0">See the "Finding Security Compatibility Issues in Internet Explorer 7" article for details on what compat issues are flagged.</comment>
+    <comment id="3" author="alexander" timestamp="2006-02-27 18:00:00.0">Sounds nice.....Would be great with "Standards Compatibility Logging" aswell...Whenever IE7 comes across anything it can't handle or handle badly, such as css, html or javascript the user is notified through a dialog.....Would greatly improve the ability to throubleshoot your websites, see what you shouldn't use, and help you realiase that plaintext is the only thing that works.</comment>
+    <comment id="4" author="PatriotB" timestamp="2006-02-27 20:08:00.0">There seems to be a typo at the end of the MSDN article, where it gives the registry key to set.....HKEY_CURRENT_USER..SOFTWARE..Microsoft..Windows..Internet Explorer..Main..FeatureControl..FeatureControl..iexplore.exe = (DWORD) 1....I'm guessing that second "FeatureControl" should be something else.</comment>
+    <comment id="5" author="Mike" timestamp="2006-02-27 20:17:00.0">Thankful</comment>
+    <comment id="6" author="lynn eriksen" timestamp="2006-02-27 21:16:00.0">Okay, Im sorry and this may be out of place but .......FOR THE LOVE OF G_D PLEASE UPDATE THE THE GRAPHIC WHEN YOU CLICK-HOLD THE MOUSE WHEEL.....There, I said. It's over. I feel better now.....:)</comment>
+    <comment id="7" author="TariqSh[MSFT]" timestamp="2006-02-27 21:28:00.0">PatriotB, thanks for catching the incorrect registry key issue. &amp;#160;It should be &amp;#8220;Feature_Enable_Compat_Logging&amp;#8221; in place of second &amp;#8220;FeatureControl&amp;#8221;. &amp;#160;MSDN folks have been contacted to fix the issue.</comment>
+    <comment id="8" author="Jack" timestamp="2006-02-27 23:54:00.0">I Can't see McAfee VirusScan 10 interface after installing IE7</comment>
+    <comment id="9" author="Lordmike" timestamp="2006-02-28 12:43:00.0">@Jack--..That is a known issue that the IE team and McAfee will solve before IE 7 is released... or it could be when IE 7 Beta 2 is released. I don't remember atm, but they are working on it.</comment>
+    <comment id="10" author="Stuart" timestamp="2006-02-28 04:27:00.0">We can no longer use salesforce.com as we have in the past. &amp;#160;Is there a fix for this applications?....Stuart</comment>
+    <comment id="11" author="alexander" timestamp="2006-02-28 05:35:00.0">Stuart, you might want to give another browser a try, Firefox and Opera are both good browsers.</comment>
+    <comment id="12" author="Stu" timestamp="2006-02-28 14:50:00.0">Hi,....I can't connect to the internet at all with windows media player after installing IE7. File streaming, radio, album art collection are all blocked. It says you must be connected to the internet to do this action.......After uninstalling IE7, back to normal.</comment>
+    <comment id="13" author="Ray" timestamp="2006-02-28 18:20:00.0">Yeah, i am having the same problem with Windows Media Player 10 too, it won't do file streaming, or radio or anything like that, since it doesn't think that i am connected to the net.....Outlook Express 6 has this same problem when i try to download all my Hotmail/Live email messages, however, it at least displays a dialog box asking if i wish to 'Work Offline' or 'Try Again'.</comment>
+    <comment id="14" author="Mark" timestamp="2006-03-07 19:30:00.0">I am having the same problem as Ray, WMP 10 seems to stop working with IE7.</comment>
+    <comment id="15" author="Simon" timestamp="2006-03-10 11:52:00.0">Same problem as Stu, Mark, and Ray! WMP no longer streams any files now that IE7 is installed. I skipped through some settings, and found nothing. What can I do?</comment>
+    <comment id="16" author="Dave" timestamp="2006-03-10 13:29:00.0">same problem with WMP10 - i changed all security settings in ie7 to the absolute minimum of security to test and still no connecting WMP10 to the internet.....it seems sometimes that the changes i make are not saving...any registry key quick fixes?</comment>
+    <comment id="17" author="Bernie" timestamp="2006-03-11 10:04:00.0">All it takes to get IE7 going with WMP is to go to &amp;gt;Tools&amp;gt;Managa Add-Ons&amp;gt; and allow WMP as an add-on...if you do not see the toolbar press the alt key that will temporarily show it.....Bernie..</comment>
+    <comment id="18" author="IEBlog" timestamp="2006-05-24 17:36:00.0">In my last blog....post I mentioned how important compatibility is, for example, you might see..a certificate...</comment>
+    <comment id="19" author="IEBlog" timestamp="2006-09-13 14:32:00.0">..While working on IE7 application compatibility, we&amp;#8217;ve seen many cases of interesting and strange invalid...</comment>
+    <comment id="20" author="The Insider" timestamp="2006-10-22 14:51:00.0">One of the Microsoft MVPs, Robear Dyer, put together a great list of sites for info and questions about</comment>
+  </comment-list>
+</page>
+

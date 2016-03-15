@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <post author="" timestamp="2006-05-24 14:33:00.0">
+    <title>Microsoft Application Compatibility Toolkit (ACT) 5.0 Beta</title>
+    <sentence-list count="14">
+      <sentence position="1" labelers="1, 3, 4">In my last blog postI mentioned how important compatibility is, for example, you might see a certificate error page and would like to know what the problem with the website digital certificate is.</sentence>
+      <sentence position="2" labelers="1, 3">In order to help you get ready for IE7, the IE team released a small toolthat can be used to find compatibility issues when using IE7 beta builds.</sentence>
+      <sentence position="3" labelers="1, 3, 4">I am happy to announce that Microsoft has released a beta of the fully featured compatibility tool, the Microsoft Application Compatibility Toolkit 5.0 Beta.</sentence>
+      <sentence position="4" labelers="1, 3">This new toolkit will cover all the IE 7 logging that the previously released tool had.</sentence>
+      <sentence position="5" labelers="2, 3">Some of the other highlights incl.</sentence>
+      <sentence position="6" labelers="1, 2, 4">ACT 5.0 will identify compatibility issues when using Windows Vista and IE7, for example, what applications are having problems with User Account Control (UAC), a new Windows Vista featu.</sentence>
+      <sentence position="7" labelers="2">Richer UI experie.</sentence>
+      <sentence position="8" labelers="2">ACT 5.0 will have agents that can be installed on individual machines which will upload all the compatibility data from individual machines to a central location for analysis, grouping, reporting e.</sentence>
+      <sentence position="9" labelers="2">Once an issue has been identified ACT 5.0 will have help available on how to resolve a particular issue or workaround .</sentence>
+      <sentence position="10" labelers="2, 4">ISV partners and customers using ACT 5.0 will be able to post comments to the new Online Application Community where they can share their information about application compatibility testing and upload results to sha.</sentence>
+      <sentence position="11" labelers="4">ACT 5.0 can also be used on Window XP SP2 to help identify compatibility issues when using IE7.</sentence>
+      <sentence position="12" labelers="1, 3, 4">Visit hereto read more about Application Compatibility Toolkit 5.0 Beta and sign up for beta program.</sentence>
+      <sentence position="13" labelers="1, 3, 4">The temporary tool created by the IE team will stop working on May 26 th 2006.</sentence>
+      <sentence position="14">Thanks, -Tariq</sentence>
+    </sentence-list>
+  </post>
+  <comment-list count="10">
+    <comment id="1" author="Hey" timestamp="2006-05-24 20:52:00.0">I have heard that Windows Vista will have virtual features or something that will promise to make Applications more compatible. If so, why do we still need the kit?</comment>
+    <comment id="2" author="Ron" timestamp="2006-05-25 01:31:00.0">"The temporary tool created by the IE team will stop working on May 26th 2006."....So...</comment>
+    <comment id="3" author="Keith Darby" timestamp="2006-05-25 08:54:00.0">Hope Microsoft will use it on there 'Microsoft Partner Program' registration page which doesn't work with IE7</comment>
+    <comment id="4" author="Robert" timestamp="2006-05-26 00:11:00.0">Hi....Is there a plan for a Beta 3 release?</comment>
+    <comment id="5" author="ricochet" timestamp="2006-05-25 13:43:00.0">I followed the link and it said that the software is still in Beta. Can I download it and use it with IE7 Beta 2 on Windows XP + SP2?..What all applications/build environments does this pack support?..</comment>
+    <comment id="6" author="EricLaw [MSFT]" timestamp="2006-05-25 19:57:00.0">@Robert: Yes, there will be an IE7 Beta3.</comment>
+    <comment id="7" author="Helge" timestamp="2006-05-31 17:51:00.0">How about somebody release a web standards compability toolkit, and you guys could check the new version of IE against that.....That would be great:)</comment>
+    <comment id="8" author="Steven Hardman" timestamp="2006-06-04 22:35:00.0">I hope a major focus of IE7 as it matures is web standards compliancy. &amp;#160;This will make or break whether my company uses IE or Firefox. &amp;#160;Firefox isn't fully Acid2 compliant but it seems to be farther along than IE7 Beta 2.</comment>
+    <comment id="9" author="IEBlog : Application Compatibility Logging In IE7" timestamp="2006-09-12 16:32:00.0">PingBack from  http://blogs.msdn.com/ie/archive/2006/02/27/540028.aspx</comment>
+    <comment id="10" author="IEBlog" timestamp="2006-11-06 17:15:00.0">I previously blogged about the availability of the Application Compatibility Toolkit 5.0, a tool that</comment>
+  </comment-list>
+</page>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <post author="" timestamp="2007-03-20 17:18:00.0">
+    <title>Deployment Guide Now Available to Help Businesses Deploy IE7</title>
+    <sentence-list count="11">
+      <sentence position="1">Hi, my name is Mike Chan, and I m a product manager for Internet Explorer focused on businesses.</sentence>
+      <sentence position="2" labelers="1, 2">This week, we released two documents to help businesses get IE7 deployed.</sentence>
+      <sentence position="3" labelers="1, 2, 3, 4">The first document explains the business value of upgrading to Internet Explorer 7 for Windows XP and can help you convince your management to deploy the latest version of IE.</sentence>
+      <sentence position="4" labelers="1, 2, 3, 4">The second document provides detailed guidance on how to get moving on that deployment.</sentence>
+      <sentence position="5" labelers="1, 2, 3">The IE7 Technology Overview for Businessesdescribes how improvements in IE7 will help you deploy and manage IE7 in your enterprise environment.</sentence>
+      <sentence position="6" labelers="1, 2, 3, 4">Whether you support a large, medium, or small business, we describe how Internet Explorer 7 can help secure your business while increasing productivity.</sentence>
+      <sentence position="7" labelers="2, 3, 4">For those who have to deal with a few hundred or more desktops, there are additional considerations before rolling out the new browser.</sentence>
+      <sentence position="8" labelers="1, 3, 4">As you plan your deployment, check out the Internet Explorer 7 Deployment Guide.</sentence>
+      <sentence position="9" labelers="1, 2, 3">This guide discusses methods of deployment and maintenance, management as well as support of Internet Explorer 7 after deployment.</sentence>
+      <sentence position="10">We re always interested in what you have to say - drop us a note at iedeploy@microsoft.comto provide feedback on these new documents.</sentence>
+      <sentence position="11">Thanks, Mike Chan Product Manager</sentence>
+    </sentence-list>
+  </post>
+  <comment-list count="5">
+    <comment id="1" author="Simon" timestamp="2007-03-21 03:32:00.0">Businesses need Firefox, not IE7.</comment>
+    <comment id="2" author="errors in document" timestamp="2007-03-21 08:57:00.0">The doc suggests that you can fix the missing main menu issue by: "To restore the menus permanently, the user can simply right click the toolbar and select Classic Menu" The option is "Menu Bar" not "Classic Menu". --- "Internet Explorer 7 makes Web and application development easier and is more standards-compliant than ever with improved support for CSS and more transparent support for the PNG typographical file format." "PNG Typographical file format"? Ooh, sign me up! I don't want to waste any more time with PNG *image* file formats now that I can use them for text!?</comment>
+    <comment id="3" author="Aedrin" timestamp="2007-03-21 10:54:00.0">"Businesses need Firefox, not IE7." Yeah! We will just give computers more memory. And force reboots at the end of the workday! And who needs those legacy websites and applications, running a business is easy!</comment>
+    <comment id="4" author="Steffen" timestamp="2007-03-21 13:17:00.0">The Windows XP running inside Virtual PC claims that I might be a victim of software counterfeiting. Quiete amusing. This has not been the case with the previous IE6.vhd. And yes, the Windows outside the Virtual Machine is legal and passes WGA.</comment>
+    <comment id="5" author="David Wrixon" timestamp="2007-03-22 18:58:00.0">From what I have seen deployment of IE7 outside the US is pretty patchy to say the least and deployment of Vista doesn't appear to be much better. Does MS simply have no interest in Internet Users that speak languages that are not represented in Latin Scripts? It is difficult to see how such user could not intrepret event in that manner.</comment>
+  </comment-list>
+</page>
+

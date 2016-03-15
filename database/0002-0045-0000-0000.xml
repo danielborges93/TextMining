@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <post author="" timestamp="2005-01-17 14:59:00.0">
+    <title>IE Setup - From IExpress to Windows Package Installer</title>
+    <sentence-list count="14">
+      <sentence position="1">My name is John Hrvatin and I m the Program Manager for Internet Explorer setup.</sentence>
+      <sentence position="2" labelers="1">That includes installers for security updates as well as integrating IE into Windows setup for future releases.</sentence>
+      <sentence position="3" labelers="1, 2">In the past, IE has used IExpress as its installer.</sentence>
+      <sentence position="4" labelers="1, 2, 3, 4">With the release of security update MS04-038 in October 2004, however, IE has begun using the Windows Package Installer, or update.exe , for all IE security updates and hot fixes on the following platforms: Windows 2000 (all service pack levels) Windows XP (all service pack levels) Windows Server 2003 (all service pack levels)</sentence>
+      <sentence position="5" labelers="1, 2">For security updates and hot fixes on all other platforms as well as existing packages like IE 6 SP1 (we re not rebuilding these), we will continue to use IExpress.</sentence>
+      <sentence position="6" labelers="2, 3, 4">We made this switch to create a more common install experience across Microsoft products and Windows components in particular, as update.exe is the standard Windows installer.</sentence>
+      <sentence position="7" labelers="1, 2, 3">The increased consistency benefits IT administrators by standardizing the user experience, including command-line switches and the location to verify installation.</sentence>
+      <sentence position="8" labelers="1, 2, 3, 4">In addition, all users will benefit from this move because of update.exe features like respect of file versions and integration with system restore along with continued improvements going forward like Watson integration for non-critical failures.</sentence>
+      <sentence position="9" labelers="2, 3, 4">Descriptions of all command-line switches, such as the rather popular /quiet /norestart , are documented in this article: Command-Line switches for Windows software update packages.</sentence>
+      <sentence position="10" labelers="3, 4">Command-line switches are also detailed in the security bulletin posted on Microsoft.com along with each security update (you can see the most recent one at http://www.microsoft.com/technet/security/bulletin/ms04-040.mspx).</sentence>
+      <sentence position="11" labelers="1, 3, 4">For more general information about update.exe you can read Inside Update.exe - The Package Installer for Windows and Windows Components.</sentence>
+      <sentence position="12" labelers="3">For information on IExpress switches, see Command-Line Switches for IExpress Software Update Packages.</sentence>
+      <sentence position="13">Thanks for participating in the IEBlog!</sentence>
+      <sentence position="14">John</sentence>
+    </sentence-list>
+  </post>
+  <comment-list count="11">
+    <comment id="1" author="Eusebio Rufian-Zilbermann" timestamp="2005-01-17 16:24:00.0">Imho to create a more common install experience, the Windows Installer (MSIServer) is a better choice. It is used by some Microsoft products and by many product outside Microsoft. It is tricky to use sometimes but it does facilitate features (e.g., resilience, advertising, policy-driven privilege escalation, etc) that are harder to implement from the ground up or using other installation technologies, and often end up not implemented for that reason.</comment>
+    <comment id="2" author="Malcolm Miles" timestamp="2005-01-17 16:28:00.0">Why do the setup examples in MS04-040 and other IE security bulletins use both the /passive and /quiet options? Isn't this redundant?..</comment>
+    <comment id="3" author="Eusebio Rufian-Zilbermann" timestamp="2005-01-17 16:45:00.0">Related to update.exe vs msiserver, the section "Installer convergence" in  http://www.microsoft.com/technet/security/topics/patch/stdpatex.mspx   describes the choice that was made.....It would be interesting to know what features got setup.exe to be the final choice for OS components.....Maybe a possible subject for a future blog entry? ':)</comment>
+    <comment id="4" author="Josh Phillips" timestamp="2005-01-17 18:31:00.0">Personally, I liked the IEAK the best. As a large corporation it provided me the flexability to deploy IE in a preconfigured setup locked down in certain areas and open in others.  With the current recomended practice of using GPO you just can't do that!  They say you just make it a prefrence but i sure as heck can't get it to work that way.  This is an area that i for one think has taken a huge step back in my opinion.</comment>
+    <comment id="5" author="Roland Siegert" timestamp="2005-01-18 08:10:00.0">The switch to update.exe is very welcome!....BTW, I always wondered why the Update UIs don't support Visual Styles. Even the Setup wizard of XP SP2 doesn't use Visual Styles. The same is true for IE updates. For example, message boxes to restart the computer have non-themed buttons. Why is that?</comment>
+    <comment id="6" author="mw" timestamp="2005-01-20 04:08:00.0">The article you link to - "Inside update.exe" - is very informative, but seems to have a rather serious error. By my reading there are two contradictory definitions of "ERROR_SUCCESS_REBOOT_REQUIRED."..I'd near complain myself, but the complaint might be better heard if it came from an Microsoft developer/manager required to use update.exe patches.</comment>
+    <comment id="7" author="AR" timestamp="2005-01-20 17:02:00.0">Thanks for the comment mw!  I have corrected the whitepaper so the online version on TechNet should be correct.</comment>
+    <comment id="8" author="Eric" timestamp="2005-01-20 17:35:00.0">Thanks Malcolm for pointing out the redundancy in using those two switches together.  The /quiet suppresses all dialogs where /passive shows the progress of the installation but does not allow the user to interrupt it.  Using the two together would have the same effect as just using /quiet.   I have asked the folks that write the bulletins to make this clearer going forward.</comment>
+    <comment id="9" author="Rick" timestamp="2005-02-02 06:31:00.0">John Hrvatin --....I have not been able to get my daughter back online since her Dell Laptop Inspiron 8200 became infected with a Trojan.StartPage virus.  I can't disable System Restore and the system tells me that the User Name and Password are inconsisten with what the system wants.  Do you have suggestions?....Rick Boardman</comment>
+    <comment id="10" author="Vertor" timestamp="2005-02-15 16:59:00.0">Watson integration - is optimal.</comment>
+    <comment id="11" author="kay lives here  &amp;#187; Blog Archive   &amp;#187; Exciting Job Descriptions" timestamp="2007-01-28 06:47:00.0">PingBack from http://d207609.fuse92.hostingfuse.com/index.php/exciting-job-descriptions/</comment>
+  </comment-list>
+</page>
+

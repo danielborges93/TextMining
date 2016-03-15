@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <post author="" timestamp="2004-10-08 17:40:00.0">
+    <title>Setting Google as Your Autosearch Provider (or One Thing I Don't Love About IE)</title>
+    <sentence-list count="27">
+      <sentence position="1">Like any piece of software I have worked on, I have intense affection for the resultant software we ship (warts and all).</sentence>
+      <sentence position="2" labelers="4">However, there are usually a number of things you wish you had had more time to make better and every time you run across it in the product it drives you crazy.</sentence>
+      <sentence position="3" labelers="1, 2, 3, 4">One thing that bothers me with IE in XPSP2 is the amount of hoops you need to click through to set Google or some other search engine as your autosearch provider.</sentence>
+      <sentence position="4" labelers="1, 2, 4">A quick way to set Google is to use the reg file up on http://www.google.com/google.regor to install the Google toolbar.</sentence>
+      <sentence position="5" labelers="1, 2, 3, 4">But as a purest of sorts and a tester, I like to use the official UI to do this.</sentence>
+      <sentence position="6" labelers="2">In the case of IE in XP, this takes a while.</sentence>
+      <sentence position="7" labelers="2, 3">You need to do the following -</sentence>
+      <sentence position="8" labelers="2">Click on the Start button</sentence>
+      <sentence position="9" labelers="2">Click on Search</sentence>
+      <sentence position="10" labelers="2">Click on Change Preferences</sentence>
+      <sentence position="11" labelers="2">Click on Change Internet Search Behavior</sentence>
+      <sentence position="12" labelers="2">Select Classic Internet</sentence>
+      <sentence position="13" labelers="2">Search Select Google from the list</sentence>
+      <sentence position="14" labelers="2">Click ok</sentence>
+      <sentence position="15" labelers="2">Start IE</sentence>
+      <sentence position="16" labelers="2">Click on Search button to open the search pane on the left</sentence>
+      <sentence position="17" labelers="2">Click on customize at the top</sentence>
+      <sentence position="18" labelers="2, 4">Click on autosearch settings</sentence>
+      <sentence position="19" labelers="2">Make sure Google is set as the search provider</sentence>
+      <sentence position="20">Click ok</sentence>
+      <sentence position="21">Click ok</sentence>
+      <sentence position="22" labelers="1, 3">That's way too many clicks.</sentence>
+      <sentence position="23" labelers="1, 4">This is definitely something we are going to get right in Longhorn.</sentence>
+      <sentence position="24" labelers="2, 3">Some may ask why we didn't fix this in XPSP2, which is a fair question.</sentence>
+      <sentence position="25" labelers="1, 2, 3, 4">We didn't fix it in XPSP2 because we had a specific focus to go in and secure the browsing experience and platform.</sentence>
+      <sentence position="26" labelers="1, 3">Doesn't mean we didn't want to.</sentence>
+      <sentence position="27">Scott IE Test Manager</sentence>
+    </sentence-list>
+  </post>
+  <comment-list count="26">
+    <comment id="1" author="Rob Eberhardt" timestamp="2004-10-08 19:49:00.0">Easier still (and better yet, really), get the Google toolbar and let it set Google as the search provider.</comment>
+    <comment id="2" author="T" timestamp="2004-10-08 20:29:00.0">The 2nd paragraph of the post says that.  The point of the post is how to do it via the UI, and how to do it for other search engines.</comment>
+    <comment id="3" author="Phillip" timestamp="2004-10-08 20:58:00.0">&amp;gt; there are usually a number of things you wish you had had more time to make better....Well, it has been over three years since IE6 came out.....You mean it isn't fixed in Longhorn yet?  Since it is going to be so long before Longhorn comes out, I bet all the XP users would have appreciated if this was fixed in SP2.</comment>
+    <comment id="4" author="Jeremy" timestamp="2004-10-08 21:10:00.0">I am afraid that this did not work for me.  When I get to the step "Click on autosearch settings", MSN is the only option in the listbox.  I when through the instructions twice, the second time making sure IE was closed before starting.</comment>
+    <comment id="5" author="Randy Charles Morin" timestamp="2004-10-08 22:29:00.0">Nothing like a great REG file. Thanks!</comment>
+    <comment id="6" author="nektar" timestamp="2004-10-09 13:00:00.0">For me it doesn't work. Firstly, the way that my computer is set up is that the Google page for me is set in a different language. When I visit it normally it shows ok but it shows in the wrong character set when I visit it through the Windows Search interface. I cannot even correct this through the search interface...Plus, in IE itself when I choose the Search bar MSN is the only choice under Customize because again my language setting is not English...Why should you be limited by your language?..And why is IE Search bar only powerful in English and not when your language preferences are in other languages?..And should not I be able to set up any search engine I like instead of being limited to what Windows lists...And should not I be able to type a special shortcut in my addressbar to switch from one engine to another like gg for Google, etc...</comment>
+    <comment id="7" author="AT" timestamp="2004-10-10 01:05:00.0">Outstanding reading !!....Combined with  http://blogs.msdn.com/seangrimaldi/archive/2004/07/28/200279.aspx    you can get this:....http://24.odessa.ua/MultiLineGoogle/ie/..http://24.odessa.ua/MultiLineGoogle/ie/ google.reg....This clearly show how you can customise your Internet explorer search bar.....Change hidden values in form using values from  http://www.google.com/advanced_search....Additionaly - if you will take obligation to update this web-form - you can store it on your local harddisk to save a few valuable seconds for web-search.  ;-)))....</comment>
+    <comment id="8" author="[unknOwn]" timestamp="2004-10-10 23:50:00.0">What good would multi-line searching do?! The example on the blog mentioned above is absurd.....As for choosing Google as your search provider, well, you know, there are browsers who have Google as default. And they're very user-friendly when it comes to adding new search bars. I've got three different ones...</comment>
+    <comment id="9" author="Maurits" timestamp="2004-10-11 09:01:00.0">The problem with adding the Google toolbar is you then have to pay the cost of disclosing your browsing history to Google.  If you're concerned about privacy (or if you work for a Google competitor) this might be to high of a cost to pay.</comment>
+    <comment id="10" author="AT" timestamp="2004-10-12 00:30:00.0">Multi-line searching will allow you to copy/paste something that span multiple lines and then edit to select mandatory for your keywords or pass it AS-IS .......Single-line input box will truncate your clipboard buffer after first line breack.....I regularly use my multiline search box with Java/C# exception stacktraces or error message I recieve. Google allow to find me answer in matter of seconds. And I no longer need to use notepad to merge several lines or select a few words from stacktrace for one-line Google search box.</comment>
+    <comment id="11" author="[unknOwn]" timestamp="2004-10-11 14:25:00.0">The problem with this multi-line searching is that if you don't know what you're doing, you'll end up with zero results. Plus, usually four words are enough to give you what you're looking for in the top 10 search results, often even on the first place.</comment>
+    <comment id="12" author="G" timestamp="2004-10-11 18:57:00.0">-  IE blog ,   MSN  Google   domain autosearch ...</comment>
+    <comment id="13" author="Dave" timestamp="2004-10-12 12:06:00.0">Nice to admit areas for improvement, a good model would be the firefox search model that comes with an easy to select range of earch engines plus a link to add more. Google should not have to resort to a .reg file to make this easy, because then people think that they need .reg files to change search engines - remember .reg files can change any registry setting so users should be trained to be wary of them. I suggest implementing support for Apple's sherlock system, then you can take advantage of search plugins written for MacOS X and Mozilla and the advantage of the sherlock system is that a malicious sherlock file can't corrupt the registry it can just change the search engine (which is easy to change back)</comment>
+    <comment id="14" author="Kev" timestamp="2004-10-12 01:19:00.0">As much as I appreciate what a burning need there is to visit Google as often as possible don't you think there are slightly more important things to fix first?</comment>
+    <comment id="15" author="Turnip" timestamp="2004-10-12 09:04:00.0">Like transparent PNGs!</comment>
+    <comment id="16" author="Gareth Jones" timestamp="2004-10-13 00:44:00.0">As Jeremy and nektar point out, this is only good for US English IE. It even provides MSN as the only choice for UK English :-(</comment>
+    <comment id="17" author="John Myers" timestamp="2004-10-13 04:17:00.0">To be honest I was even surprised that Google was an option in US English IE, I knew it wasn't in the UK one unless it was set up manually.....So if you can slip in Google support for all users in the next service pack then that'd be great. Then you'd be getting one step closer to Firefox.....1) Pop up blocking - done (XP only!)..2) Google support built it - maybe next release..3) Tabbed browsing - no idea if/when..4) Typeahead find - no idea if/when..5) Cross platform (incl Linux) - never(?)..6) Proper PNG support - no idea if/when..7) Live bookmarks - no idea if/when..8) No need to reboot on upgrade - unlikely</comment>
+    <comment id="18" author="Turnip" timestamp="2004-10-13 10:02:00.0">If they made it cross platform, then they'd have to remove it from the OS, and if they did that, they'd be taking a huge leap towards something you didn't mention: Security!....But that's not going to happen.</comment>
+    <comment id="19" author="AT" timestamp="2004-10-13 13:33:00.0">Gareth Jones: ? Anybody tried to use something like this:..http://www.google.com/ie?hl=ru&amp;amp;num=100....hl = ru     Russian lang..num = 100   Increase number of returned link on one page</comment>
+    <comment id="20" author="SomeGuy" timestamp="2004-10-14 01:05:00.0">SUPPORT CSS 1 &amp;amp; 2 PLEASE!!!</comment>
+    <comment id="21" author="Gill Bates" timestamp="2004-10-14 07:22:00.0">An easier way to set Google as default:..1. Point IE at  http://getfirefox.com/..2. Click download link..3. Click Open..4. Wait a couple of minutes..5. Agree to the license..6. Keep clicking next..7. Click finish..8. Click yes to "Set as default browser"....Isn't it ironic that you can upgrade to a whole new browser quicker than you can change the Google setting in IE?</comment>
+    <comment id="22" author="Stephen O'Brien" timestamp="2004-10-14 10:44:00.0">LOL! Strange thing is, its actually true.</comment>
+    <comment id="23" author="chris" timestamp="2004-10-15 06:39:00.0">Scott could you maybe detail whether MSN is the homepage for IE and for the search page in future releases. You get the impression that some naff sales-type person made this decision, using the fuzzy logic that if you force msn on people, they will use it. Google proved this wrong, and it (like the animated dog for searching), is incredibly patronising</comment>
+    <comment id="24" author="Bob Harris" timestamp="2004-10-16 04:20:00.0">That animated dog in XP search dialog was first debuted in Microsoft Bob.....http://toastytech.com/guis/bob2.html</comment>
+    <comment id="25" author="Qda" timestamp="2004-10-23 20:12:00.0">man.. firefox is so superior....i would be really surprised if they dont blow firefox out of the water with longhorn. they have all the money and resources they need, and a perfect browser such as firefox to learn from and copy. hell, if you just took firefox, and called it IE, you would blow firefox away just cause of your current number of users......sigh..shame on you..ie sucks</comment>
+    <comment id="26" author="Gill Bates" timestamp="2004-10-24 10:12:00.0">Just because you didn't doesn't mean you didn't want to? HA! Just because you tied your browser into your OS doesn't mean you DIDN'T want a security hole the size of Washington state built into the OS. Just because Microsoft is working on their own search engine to replace Google doesn'y mean they won't try to lock it out entirely. Just because Microsoft doesn't like to follow the specs of the W3C and create it's own specs doesn't mean that it ISN'T trying to control the internet.....Denial isn't just a river in Egypt... it's now a city in Washington; population: Microsoft.</comment>
+  </comment-list>
+</page>
+

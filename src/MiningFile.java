@@ -1,6 +1,7 @@
 
 import Jama.Matrix;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.InputStreamReader;
@@ -11,9 +12,12 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import javax.xml.parsers.DocumentBuilderFactory;
 import model.Document;
 import model.Techniques;
 import model.Word;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 public class MiningFile {
 
@@ -26,6 +30,8 @@ public class MiningFile {
     private ArrayList<Document> orderedDocuments;
     private HashMap<String, Word> mapWords;
     private Matrix similarityMatrix;
+    
+    private String[] personSumaries;
 
     public MiningFile(String location) throws Exception {
         this.location = location;
@@ -56,6 +62,10 @@ public class MiningFile {
         }
         return string.toString();
     }
+    
+    public String[] getPersonSumaries() {
+        return personSumaries;
+    }
 
     public void prepareForSimilarity() throws Exception {
         getContent();
@@ -66,6 +76,17 @@ public class MiningFile {
         createFrequencyMatrix();
         getTFIDFMatrix();
         calculateSimilarity();
+    }
+
+    public void prepareForBlogSummarization() throws Exception {
+        blog_preProccess();
+        treatContent();
+        createDocuments();
+        getWords();
+        createFrequencyMatrix();
+        getTFIDFMatrix();
+        applyWeight();
+        rank();
     }
 
     public List<String> similarWordsTo(String word, int number) {
@@ -83,6 +104,57 @@ public class MiningFile {
             number = orderedWords.size();
         }
         return orderedWords.subList(0, number);
+    }
+
+    private void blog_preProccess() throws Exception {
+        File file = new File(this.location);
+        org.w3c.dom.Document document = DocumentBuilderFactory
+                .newInstance()
+                .newDocumentBuilder()
+                .parse(file);
+        document.getDocumentElement().normalize();
+        String title = document
+                .getElementsByTagName("title")
+                .item(0)
+                .getTextContent();
+        String author = document
+                .getElementsByTagName("post")
+                .item(0)
+                .getAttributes()
+                .getNamedItem("author")
+                .getTextContent();
+        NodeList nodeList = document
+                .getElementsByTagName("sentence");
+        StringBuilder contentBuilder = new StringBuilder();
+        HashMap<String, StringBuilder> labelers = new HashMap<>();
+        for (int i = 0; i < nodeList.getLength(); i++) {
+            Node node = nodeList.item(i);
+            String sentence = node.getTextContent();
+            contentBuilder.append(sentence).append(" ");
+            try {
+                String[] labeler = node
+                        .getAttributes()
+                        .getNamedItem("labelers")
+                        .getTextContent()
+                        .split(", ");
+                if (labeler.length > 0) {
+                    for (String l : labeler) {
+                        StringBuilder builder = (labelers.get(l) == null)? 
+                                new StringBuilder() : 
+                                labelers.get(l);
+                        builder.append(sentence).append(" ");
+                        labelers.put(l, builder);
+                    }
+                }
+            } catch (NullPointerException ex) {
+            }
+        }
+        personSumaries = new String[labelers.size()];
+        int i = 0;
+        for (String l : labelers.keySet()) {
+            personSumaries[i++] = labelers.get(l).toString();
+        }
+        content = contentBuilder.toString();
     }
 
     private void getContent() throws Exception {
